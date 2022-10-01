@@ -13,7 +13,7 @@ return (
 			<p>{selected.Plot}</p>
 		</div>
 
-		<button className="close" onClick={closeDetail}>Cl</button>
+		<button className="close" onClick={closeDetail}>Close</button>
 	</div>
 	</section>
 );
