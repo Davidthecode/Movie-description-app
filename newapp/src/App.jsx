@@ -25,8 +25,6 @@ const search = (e) => {
 	axios(apiurl + "&s=" + state.s).then(
 		({ data }) => {
 		let results = data.Search
-
-		console.log(results);
 		let holdState = {...state, results: results}
 		setState(holdState)
 	})
@@ -36,9 +34,7 @@ const search = (e) => {
 
 const openDetail = (id) => {
 	axios(apiurl + "&i=" + id).then(({ data }) => {
-	let result = data;
-	console.log(result)
-
+	let result = data
 	let holdState = {...state, selected: result}
 	console.log(holdState)
 	setState(holdState)

@@ -9,14 +9,11 @@ return (
 		<p className="rating">Rating: {selected.imdbRating}</p>
 
 		<div className="about">
-		<img src={selected.Poster} alt="" />
-			
-<p>{selected.Plot}</p>
-
+			<img src={selected.Poster} alt="" />	
+			<p>{selected.Plot}</p>
 		</div>
-		<button className="close" onClick={closeDetail}>
-		Close
-		</button>
+
+		<button className="close" onClick={closeDetail}>Close</button>
 	</div>
 	</section>
 );
